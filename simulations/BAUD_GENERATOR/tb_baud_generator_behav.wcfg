@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_BAUD_GENERATOR_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_BAUD_GENERATOR" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="357.382 ns"></ZoomEndTime>
+      <Cursor1Time time="509.018 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="251"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SPI_MODE_I" type="array">
+      <obj_property name="ElementShortName">SPI_MODE_I[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SPI_MODE_I[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SPISWAI_I" type="logic">
+      <obj_property name="ElementShortName">SPISWAI_I</obj_property>
+      <obj_property name="ObjectShortName">SPISWAI_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SPPR_I" type="array">
+      <obj_property name="ElementShortName">SPPR_I[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SPPR_I[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SPR_I" type="array">
+      <obj_property name="ElementShortName">SPR_I[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SPR_I[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/CPOL_I" type="logic">
+      <obj_property name="ElementShortName">CPOL_I</obj_property>
+      <obj_property name="ObjectShortName">CPOL_I</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/CPHA_I" type="logic">
+      <obj_property name="ElementShortName">CPHA_I</obj_property>
+      <obj_property name="ObjectShortName">CPHA_I</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SS_I" type="logic">
+      <obj_property name="ElementShortName">SS_I</obj_property>
+      <obj_property name="ObjectShortName">SS_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/PCLK" type="logic">
+      <obj_property name="ElementShortName">PCLK</obj_property>
+      <obj_property name="ObjectShortName">PCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/PRESETn" type="logic">
+      <obj_property name="ElementShortName">PRESETn</obj_property>
+      <obj_property name="ObjectShortName">PRESETn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/SCLK_O" type="logic">
+      <obj_property name="ElementShortName">SCLK_O</obj_property>
+      <obj_property name="ObjectShortName">SCLK_O</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/MISO_RCV_SCLKP_O" type="logic">
+      <obj_property name="ElementShortName">MISO_RCV_SCLKP_O</obj_property>
+      <obj_property name="ObjectShortName">MISO_RCV_SCLKP_O</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/MISO_RCV_SCLKN_O" type="logic">
+      <obj_property name="ElementShortName">MISO_RCV_SCLKN_O</obj_property>
+      <obj_property name="ObjectShortName">MISO_RCV_SCLKN_O</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/MOSI_SEND_SCLKP_O" type="logic">
+      <obj_property name="ElementShortName">MOSI_SEND_SCLKP_O</obj_property>
+      <obj_property name="ObjectShortName">MOSI_SEND_SCLKP_O</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/MOSI_SEND_SCLKN_O" type="logic">
+      <obj_property name="ElementShortName">MOSI_SEND_SCLKN_O</obj_property>
+      <obj_property name="ObjectShortName">MOSI_SEND_SCLKN_O</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_BAUD_GENERATOR/BAUD_RATE_DIV_O" type="array">
+      <obj_property name="ElementShortName">BAUD_RATE_DIV_O[11:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_RATE_DIV_O[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

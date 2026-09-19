@@ -1,0 +1,28 @@
+****************************************
+Report : area
+Design : SPI_TOP
+Version: T-2022.03-SP4
+Date   : Thu Sep 17 20:16:08 2026
+****************************************
+
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN74/ChhandakR/VLSI_RN_ONLINE/MINI_PROJECT/APB_based_SPI_Master_Controller/lib/lsi_10k.db)
+
+Number of ports:                          172
+Number of nets:                           998
+Number of cells:                          783
+Number of combinational cells:            645
+Number of sequential cells:               134
+Number of macros/black boxes:               0
+Number of buf/inv:                         74
+Number of references:                       4
+
+Combinational area:               1014.000000
+Buf/Inv area:                       75.000000
+Noncombinational area:            1190.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2204.000000
+Total area:                 undefined

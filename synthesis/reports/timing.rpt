@@ -1,0 +1,59 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SPI_TOP
+Version: T-2022.03-SP4
+Date   : Thu Sep 17 20:16:08 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: Baud_gen/active_BRD_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Baud_gen/count_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Baud_gen/active_BRD_reg[2]/CP (FD2)      0.00       0.00 r
+  Baud_gen/active_BRD_reg[2]/QN (FD2)      2.08       2.08 r
+  Baud_gen/U126/Z (ND2)                    0.30       2.38 f
+  Baud_gen/U43/Z (NR2)                     1.46       3.84 r
+  Baud_gen/U30/Z (AN3)                     1.27       5.11 r
+  Baud_gen/U25/Z (ND2)                     0.30       5.41 f
+  Baud_gen/U22/Z (NR2)                     1.59       7.00 r
+  Baud_gen/U21/Z (ND2)                     0.30       7.30 f
+  Baud_gen/U17/Z (NR2)                     1.59       8.88 r
+  Baud_gen/U129/Z (ND2)                    0.30       9.18 f
+  Baud_gen/U130/Z (NR2)                    0.81       9.99 r
+  Baud_gen/U131/Z (NR2)                    0.31      10.30 f
+  Baud_gen/U133/Z (AO4)                    1.18      11.48 r
+  Baud_gen/U14/Z (AO3)                     0.73      12.21 f
+  Baud_gen/U13/Z (ND2)                     1.46      13.68 r
+  Baud_gen/U12/Z (IVP)                     0.52      14.20 f
+  Baud_gen/U202/Z (ND2)                    0.64      14.84 r
+  Baud_gen/U203/Z (ND2)                    0.30      15.14 f
+  Baud_gen/U205/Z (NR2)                    1.07      16.21 r
+  Baud_gen/U207/Z (EO1)                    1.05      17.26 f
+  Baud_gen/count_reg[10]/D (FD2)           0.00      17.26 f
+  data arrival time                                  17.26
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  Baud_gen/count_reg[10]/CP (FD2)          0.00      20.00 r
+  library setup time                      -0.85      19.15
+  data required time                                 19.15
+  -----------------------------------------------------------
+  data required time                                 19.15
+  data arrival time                                 -17.26
+  -----------------------------------------------------------
+  slack (MET)                                         1.89
+
+

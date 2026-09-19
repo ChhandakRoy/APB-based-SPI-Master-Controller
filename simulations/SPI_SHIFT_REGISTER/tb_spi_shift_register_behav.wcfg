@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_spi_shift_register_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_spi_shift_register" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5,547.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="8,545.001 ns"></ZoomEndTime>
+      <Cursor1Time time="6,733.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/tb_spi_shift_register/PCLK" type="logic">
+      <obj_property name="ElementShortName">PCLK</obj_property>
+      <obj_property name="ObjectShortName">PCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/PRESETn" type="logic">
+      <obj_property name="ElementShortName">PRESETn</obj_property>
+      <obj_property name="ObjectShortName">PRESETn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SPI_MODE_I" type="array">
+      <obj_property name="ElementShortName">SPI_MODE_I[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SPI_MODE_I[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SPISWAI_I" type="logic">
+      <obj_property name="ElementShortName">SPISWAI_I</obj_property>
+      <obj_property name="ObjectShortName">SPISWAI_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SPPR_I" type="array">
+      <obj_property name="ElementShortName">SPPR_I[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SPPR_I[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SPR_I" type="array">
+      <obj_property name="ElementShortName">SPR_I[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SPR_I[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/CPOL_I" type="logic">
+      <obj_property name="ElementShortName">CPOL_I</obj_property>
+      <obj_property name="ObjectShortName">CPOL_I</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/CPHA_I" type="logic">
+      <obj_property name="ElementShortName">CPHA_I</obj_property>
+      <obj_property name="ObjectShortName">CPHA_I</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SS_I" type="logic">
+      <obj_property name="ElementShortName">SS_I</obj_property>
+      <obj_property name="ObjectShortName">SS_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/LSBFE_I" type="logic">
+      <obj_property name="ElementShortName">LSBFE_I</obj_property>
+      <obj_property name="ObjectShortName">LSBFE_I</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SEND_DATA_I" type="logic">
+      <obj_property name="ElementShortName">SEND_DATA_I</obj_property>
+      <obj_property name="ObjectShortName">SEND_DATA_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/DATA_MOSI_I" type="array">
+      <obj_property name="ElementShortName">DATA_MOSI_I[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_MOSI_I[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SCLK_O" type="logic">
+      <obj_property name="ElementShortName">SCLK_O</obj_property>
+      <obj_property name="ObjectShortName">SCLK_O</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MOSI_SEND_SCLKN" type="logic">
+      <obj_property name="ElementShortName">MOSI_SEND_SCLKN</obj_property>
+      <obj_property name="ObjectShortName">MOSI_SEND_SCLKN</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/Tx_shift_reg" type="array">
+      <obj_property name="ElementShortName">Tx_shift_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Tx_shift_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MOSI_O" type="logic">
+      <obj_property name="ElementShortName">MOSI_O</obj_property>
+      <obj_property name="ObjectShortName">MOSI_O</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/bitcnt1" type="array">
+      <obj_property name="ElementShortName">bitcnt1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bitcnt1[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/Tx_status" type="logic">
+      <obj_property name="ElementShortName">Tx_status</obj_property>
+      <obj_property name="ObjectShortName">Tx_status</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/SCLK_O" type="logic">
+      <obj_property name="ElementShortName">SCLK_O</obj_property>
+      <obj_property name="ObjectShortName">SCLK_O</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MISO_RCV_SCLKP" type="logic">
+      <obj_property name="ElementShortName">MISO_RCV_SCLKP</obj_property>
+      <obj_property name="ObjectShortName">MISO_RCV_SCLKP</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MISO_I" type="logic">
+      <obj_property name="ElementShortName">MISO_I</obj_property>
+      <obj_property name="ObjectShortName">MISO_I</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/Rx_shift_reg" type="array">
+      <obj_property name="ElementShortName">Rx_shift_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Rx_shift_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/bitcnt2" type="array">
+      <obj_property name="ElementShortName">bitcnt2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bitcnt2[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/RECEIVE_DATA_I" type="logic">
+      <obj_property name="ElementShortName">RECEIVE_DATA_I</obj_property>
+      <obj_property name="ObjectShortName">RECEIVE_DATA_I</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/DATA_MISO_O" type="array">
+      <obj_property name="ElementShortName">DATA_MISO_O[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_MISO_O[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/dut/Rx_status" type="logic">
+      <obj_property name="ElementShortName">Rx_status</obj_property>
+      <obj_property name="ObjectShortName">Rx_status</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MISO_RCV_SCLKN" type="logic">
+      <obj_property name="ElementShortName">MISO_RCV_SCLKN</obj_property>
+      <obj_property name="ObjectShortName">MISO_RCV_SCLKN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/MOSI_SEND_SCLKP" type="logic">
+      <obj_property name="ElementShortName">MOSI_SEND_SCLKP</obj_property>
+      <obj_property name="ObjectShortName">MOSI_SEND_SCLKP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/BAUD_RATE_DIV_O" type="array">
+      <obj_property name="ElementShortName">BAUD_RATE_DIV_O[11:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_RATE_DIV_O[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/test_count" type="array">
+      <obj_property name="ElementShortName">test_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_shift_register/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

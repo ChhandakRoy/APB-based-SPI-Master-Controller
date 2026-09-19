@@ -1,0 +1,55 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : SPI_TOP
+Version: T-2022.03-SP4
+Date   : Thu Sep 17 20:16:08 2026
+****************************************
+
+
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN74/ChhandakR/VLSI_RN_ONLINE/MINI_PROJECT/APB_based_SPI_Master_Controller/lib/lsi_10k.db)
+
+Information: The cells in your design are not characterized for internal power. (PWR-229)
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 0.100000ff
+    Time Units = 1ns
+    Dynamic Power Units = 100nW    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   0.0000 nW    (0%)
+  Net Switching Power  =   1.0848 uW  (100%)
+                         ---------
+Total Dynamic Power    =   1.0848 uW  (100%)
+
+Cell Leakage Power     =   0.0000
+
+Error: Either dynamic power or leakage power, in the library, is unitless. Unable to display complete power group summary. (PWR-799)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000               NA   (     N/A)
+memory             0.0000            0.0000            0.0000               NA   (     N/A)
+black_box          0.0000            0.0000            0.0000               NA   (     N/A)
+clock_network      0.0000            0.0000            0.0000               NA   (     N/A)  i
+register           0.0000          120.9507            0.0000               NA   (     N/A)
+sequential         0.0000            0.0000            0.0000               NA   (     N/A)
+combinational      0.0000          963.8855            0.0000               NA   (     N/A)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 nW     1.0848e+03 nW         0.0000               NA
+

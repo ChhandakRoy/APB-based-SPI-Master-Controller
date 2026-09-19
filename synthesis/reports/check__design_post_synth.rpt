@@ -1,0 +1,22 @@
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Sat Sep 19 15:07:04 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Unconnected ports (LINT-28)                                     2
+
+Cells                                                               1
+    Hier pins without driver and load (LINT-60)                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'BAUD_GENERATOR', port 'BAUD_RATE_DIV_O[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SPI_SLAVE_CONTROL_SELECT_WIDTH8', port 'BAUD_RATE_DIV_I[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SPI_TOP', input pin 'BAUD_RATE_DIV_I[0]' of hierarchical cell 'SPI_slave_control_select' has no internal loads and is not connected to any nets. (LINT-60)
+
+###################################################################################################################################
+#COMMENTS :Bit 0 is structurally redundant because the implemented baud-rate divisor is always an even value ((SPPR+1) × 2^(SPR+1)), allowing synthesis to optimize this bit away. So this warning is Completely harmless.
+###################################################################################################################################

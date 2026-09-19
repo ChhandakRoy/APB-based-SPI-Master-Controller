@@ -1,0 +1,414 @@
+-----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Sep 19, 2026  15:35:38
+
+    TopLevelModule: SPI_TOP
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos
+  -----             --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         0        19         1
+  STRUCTURAL_CHECK  CODING           0         0         1         9
+  -----             --------  --------  --------  --------  --------
+  Total                              0         0        20        10
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count
+  --------  -----             -------------------  -----
+  warning   LANGUAGE_CHECK    STARC05-2.11.3.1         2
+  warning   LANGUAGE_CHECK    STARC05-2.2.3.3          7
+  warning   LANGUAGE_CHECK    W415a                    6
+  warning   LANGUAGE_CHECK    W481a                    3
+  warning   LANGUAGE_CHECK    W486                     1
+  warning   STRUCTURAL_CHECK  STARC05-1.3.1.3          1
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML        9
+  --------  -----             -------------------  -----
+  Total                                               30
+
+
+
+  -----------------------------------------------------------------------------
+  STARC05-1.3.1.3  (1 warning/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : STARC05-1.3.1.3
+  Description         : Asynchronous [SetOrReset] signal '[SeqSetRstNet]' ([FlopOrLatch]: '[DesignSeqNet]') used as non-[SetOrReset]/synchronous-[SetOrReset] at instance '[DesignInstanceName]' (File Name: '[RTL_FILENAME]' ,Line no.: '[RTL_LINE_NUM]')
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ./../rtl/APB_SLAVE_INTERFACE.v
+  LineNumber          : 174
+  Statement           :     if (!PRESETn)
+  SetOrReset          : reset
+  FlopOrLatch         : flop
+  SeqSetRstNet        : PRESETn
+  DesignSeqNet        : APB_slave_interface/PRDATA_O[0]
+  DesignInstanceName  : Shift_reg/I_MUX_N_46/SEL
+  RTL_FILENAME        : ./../rtl/SPI_SHIFT_REGISTER.v
+  RTL_LINE_NUM        : 59
+  Module              : SPI_TOP
+
+  -----------------------------------------------------------------------------
+  STARC05-2.11.3.1  (2 warnings/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : STARC05-2.11.3.1
+  Description   : Combinational and sequential parts of an FSM '[Module_Name].[Signal]' described in same always block
+  Violation     : Lint:14
+  Goal          : lint_rtl
+  Module        : APB_SLAVE_INTERFACE
+  FileName      : ./../rtl/APB_SLAVE_INTERFACE.v
+  LineNumber    : 199
+  Statement     :         case(SPI_state)
+  Module_Name   : APB_SLAVE_INTERFACE
+  Signal        : SPI_state
+  -----------------------------------------------------------------------------
+  Tag           : STARC05-2.11.3.1
+  Description   : Combinational and sequential parts of an FSM '[Module_Name].[Signal]' described in same always block
+  Violation     : Lint:15
+  Goal          : lint_rtl
+  Module        : APB_SLAVE_INTERFACE
+  FileName      : ./../rtl/APB_SLAVE_INTERFACE.v
+  LineNumber    : 238
+  Statement     :         case(APB_state)
+  Module_Name   : APB_SLAVE_INTERFACE
+  Signal        : APB_state
+
+  -----------------------------------------------------------------------------
+  STARC05-2.2.3.3  (7 warnings/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:26
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 73
+  Statement          :                 SS_O    <=1'b1;
+  Clock_Register     : SS_O
+  CulpritLineNumber  : 53
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:29
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 83
+  Statement          :             END             <= 1'b0;
+  Clock_Register     : END
+  CulpritLineNumber  : 75
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:25
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 72
+  Statement          :                 START   <=1'b0;
+  Clock_Register     : START
+  CulpritLineNumber  : 52
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:27
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 74
+  Statement          :                 RECEIVE_DATA_O  <= 1'b1;
+  Clock_Register     : RECEIVE_DATA_O
+  CulpritLineNumber  : 59
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:23
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 67
+  Statement          :                 count   <= count +1;
+  Clock_Register     : count
+  CulpritLineNumber  : 51
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:28
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 82
+  Statement          :             RECEIVE_DATA_O  <= 1'b0;
+  Clock_Register     : RECEIVE_DATA_O
+  CulpritLineNumber  : 59
+  -----------------------------------------------------------------------------
+  Tag                : STARC05-2.2.3.3
+  Description        : Flipflop '[Clock_Register]' is assigned over the same signal in an always construct for sequential circuits (at line '[CulpritLineNumber]')
+  Violation          : Lint:24
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 68
+  Statement          :                 SS_O    <= 1'b0;
+  Clock_Register     : SS_O
+  CulpritLineNumber  : 53
+
+  -----------------------------------------------------------------------------
+  W415a  (6 warnings/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:18
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 68
+  Statement          :                 SS_O    <= 1'b0;
+  Signal             : SS_O
+  CulpritLineNumber  : 58
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :                 SS_O    <= 1'b0;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:68)
+  MultiLine          :             SS_O            <= 1'b1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:58)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:19
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 72
+  Statement          :                 START   <=1'b0;
+  Signal             : START
+  CulpritLineNumber  : 52
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :                 START   <=1'b0;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:72)
+  MultiLine          :                 START   <=1'b1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:52)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:20
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 73
+  Statement          :                 SS_O    <=1'b1;
+  Signal             : SS_O
+  CulpritLineNumber  : 53
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :                 SS_O    <=1'b1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:73)
+  MultiLine          :                 SS_O    <=1'b0;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:53)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:17
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 67
+  Statement          :                 count   <= count +1;
+  Signal             : count
+  CulpritLineNumber  : 51
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :                 count   <= count +1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:67)
+  MultiLine          :                 count   <=16'd1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:51)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:21
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 74
+  Statement          :                 RECEIVE_DATA_O  <= 1'b1;
+  Signal             : RECEIVE_DATA_O
+  CulpritLineNumber  : 59
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :                 RECEIVE_DATA_O  <= 1'b1;    (./../rtl/SPI_SLAVE_CONTROL_SELECT.v:74)
+  MultiLine          :             RECEIVE_DATA_O  <= 1'b0;    (./../rtl/SPI_SLAVE_CONTROL_SELECT.v:59)
+  -----------------------------------------------------------------------------
+  Tag                : W415a
+  Description        : Signal [Signal] is being assigned multiple times ( previous assignment at line [CulpritLineNumber] ) in same always block [Hierarchy: '[HIERARCHY]']
+  Violation          : Lint:22
+  Goal               : lint_rtl
+  Module             : SPI_SLAVE_CONTROL_SELECT
+  FileName           : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber         : 83
+  Statement          :             END             <= 1'b0;
+  Signal             : END
+  CulpritLineNumber  : 75
+  HIERARCHY          : :SPI_TOP:SPI_slave_control_select@SPI_SLAVE_CONTROL_SELECT
+  MultiLine          :             END             <= 1'b0;                  (./../rtl/SPI_SLAVE_CONTROL_SELECT.v:83)
+  MultiLine          :                 END             <= 1'b1;(./../rtl/SPI_SLAVE_CONTROL_SELECT.v:75)
+
+  -----------------------------------------------------------------------------
+  W481a  (3 warnings/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : W481a
+  Description   : Possibly unsynthesizable loop: step variable '[VariableName]' is not used in condition
+  Violation     : Lint:13
+  Goal          : lint_rtl
+  Module        : SPI_SLAVE_CONTROL_SELECT
+  FileName      : ./../rtl/SPI_SLAVE_CONTROL_SELECT.v
+  LineNumber    : 97
+  Statement     :         for (i = 0; value > 0; i = i + 1)
+  VariableName  : i
+  -----------------------------------------------------------------------------
+  Tag           : W481a
+  Description   : Possibly unsynthesizable loop: step variable '[VariableName]' is not used in condition
+  Violation     : Lint:11
+  Goal          : lint_rtl
+  Module        : SPI_SHIFT_REGISTER
+  FileName      : ./../rtl/SPI_SHIFT_REGISTER.v
+  LineNumber    : 168
+  Statement     :         for (i = 0; value > 0; i = i + 1)
+  VariableName  : i
+  -----------------------------------------------------------------------------
+  Tag           : W481a
+  Description   : Possibly unsynthesizable loop: step variable '[VariableName]' is not used in condition
+  Violation     : Lint:12
+  Goal          : lint_rtl
+  Module        : APB_SLAVE_INTERFACE
+  FileName      : ./../rtl/APB_SLAVE_INTERFACE.v
+  LineNumber    : 274
+  Statement     :         for (i = 0; value > 0; i = i + 1)
+  VariableName  : i
+
+  -----------------------------------------------------------------------------
+  W486  (1 warning/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : W486
+  Description   : Rhs width '[RHS_Size]' with shift (Expr: '[RHSExpr]') is more than lhs width '[LHS_Size]' (Expr: '[LHSExpr]'), this may cause overflow [Hierarchy: '[HIERARCHY]']
+  Violation     : Lint:16
+  Goal          : lint_rtl
+  Module        : BAUD_GENERATOR
+  FileName      : ./../rtl/BAUD_GENERATOR.v
+  LineNumber    : 35
+  Statement     : wire   [8:0]      baud_div_2    = (1<<(SPR_I+1));
+  RHS_Size      : 32
+  RHSExpr       : (1 << (SPR_I + 1))
+  LHS_Size      : 9
+  LHSExpr       : baud_div_2
+  HIERARCHY     : :SPI_TOP:Baud_gen@BAUD_GENERATOR
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (9 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:6
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 33
+  Statement           : output                  PSLVERR_O,
+  Signal              : PSLVERR_O
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:8
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 37
+  Statement           : output                  MOSI_O,
+  Signal              : MOSI_O
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:5
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 32
+  Statement           : output                  PREADY_O,
+  Signal              : PREADY_O
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:10
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 30
+  Statement           : input  [2:0]            PADDR_I,
+  Signal              : PADDR_I[2:0]
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 26
+  Statement           : input                   PWRITE_I,
+  Signal              : PWRITE_I
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:7
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 34
+  Statement           : output                  SPI_INTERRUPT_RQST_O,
+  Signal              : SPI_INTERRUPT_RQST_O
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 27
+  Statement           : input                   PSEL_I,
+  Signal              : PSEL_I
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:4
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 28
+  Statement           : input                   PENABLE_I,
+  Signal              : PENABLE_I
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:9
+  Goal                : lint_rtl
+  FileName            : ./../rtl/SPI_TOP.v
+  LineNumber          : 38
+  Statement           : input                   MISO_I,
+  Signal              : MISO_I
+  Module              : SPI_TOP
+  DesignObjHierarchy  : SPI_TOP
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:30
+  Goal          : lint_rtl
+  FileName      : /home1/BRN74/ChhandakR/VLSI_RN_ONLINE/MINI_PROJECT/APB_based_SPI_Master_Controller/lint/vcst_rtdb/spyglass/vc_lint0/SPI_TOP/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info
