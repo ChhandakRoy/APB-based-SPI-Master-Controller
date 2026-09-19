@@ -54,19 +54,10 @@ The design is parameterized through `WIDTH`; the reported synthesis configuratio
 
 # 🧱 Architecture
 
-```text
+![SPI_TOP Microarchitecture](docs/Architecture.png)
 
-<p align="center">
-  <img src="docs/Architecture.png" alt="SPI Top Microarchitecture" width="100%">
-</p>
+**Figure 1: SPI_TOP Microarchitecture**
 
-<p align="center">
-  <b>Figure 1: SPI_TOP Microarchitecture</b>
-</p>
-               
-```
-
----
 
 # 🧩 RTL Module Description
 
